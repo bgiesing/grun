@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Hodor",
+    "description": "This extension converts every word into Hodor.",
+    "version": "1.0",
+    "browser_action": {
+        "default_icon": "hodor.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+        "matches": ["http://*/*", "https://*/*", "https://twitter.com/*/*"],
+        "js": ["hodor.js"]
+        }
+    ]
+}
