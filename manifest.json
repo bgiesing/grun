@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Hodor",
-    "description": "This extension converts every word into Hodor.",
+    "description": "This extension converts the text in any page to a series of Hodor's utterances.",
     "version": "1.0",
     "browser_action": {
         "default_icon": "hodor.png",
