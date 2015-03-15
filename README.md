@@ -1,6 +1,14 @@
-hodor
-=====
+#hodor 
+###*the hodorifying chrome extension*
 
-Chrome Extension To Turn Every Word Into Hodor
+####What Is It?
 
-This is the first version of hodor, the hodorifying Chrome Extension. Atm it only works on http:// URLs and does a simple text substitution. Hopefully in the future it will have a more organically hodorific appearance.
+Hodor is a Chrome extension that will, on the click of the extension icon, change every word into Hodor, with randomly generated punctuation to keep it from getting too dull.
+
+####How Do I Use It?
+
+Since Hodor isn't in the Chrome store, you need to download the extension, and in the extensions menu of Chrome, click "load unpacked extension" and select Hodor's directory. It otherwise behaves like any Chrome extension you'd download from the store.
+
+####Rights, Etc.
+
+I obviously don't own the rights to Game of Thrones, and I'm not a representative of GRR, HBO, or any-one/thing else related to the production and distribution of Game of Thrones, either in print or television.
