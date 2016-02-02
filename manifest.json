@@ -5,7 +5,7 @@
     "version": "1.0",
     "author": "Steven A. Dunn and Brandon Giesing",
     "browser_action": {
-        "default_icon": "grun.png"
+        "default_icon": "grun.jpg"
     },
     "content_scripts": [
         {
