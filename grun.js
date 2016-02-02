@@ -2,59 +2,59 @@ function generatePhrase() {
     var selected_phrase = Math.floor((Math.random() * 10) + 1);
     switch(selected_phrase) {
       case 1:
-        return "Hodor. ";
+        return "Grun. ";
         break
       case 2:
-        return "Hodor hodor. ";
+        return "Grun grun. ";
         break;
       case 3:
-        return "Hodor? "
+        return "Grun? "
         break;
       case 4:
-        return "Hodor! ";
+        return "Grun! ";
         break;
       case 5:
-        return "Hodor? Hodor. ";
+        return "Grun? Grun. ";
         break;
       case 6:
-        return "Hodor? Hodor! ";
+        return "Grun? Grun! ";
         break;
       case 7:
-        return "Hodor! Hodor! ";
+        return "Grun! Grun! ";
         break;
       case 8:
-        return "(Hodor hodor.) ";
+        return "(Grun grun.) ";
         break;
       case 9:
-        return "(Hodor.) ";
+        return "(Grun.) ";
         break;
       case 10:
-        return "(Hodor?) ";
+        return "(Grun?) ";
         break;
       default:
-        return "Hodor. ";
+        return "Grun. ";
         break;
     }
 }
 
-function hodorify(element) {
+function grunify(element) {
     if (element.childNodes.length > 0)
         for (var i = 0; i < element.childNodes.length; i++)
-            hodorify(element.childNodes[i]);
+            grunify(element.childNodes[i]);
     if (element.nodeType == Node.TEXT_NODE && /\S/.test(element.nodeValue)) {
         var num_words = element.nodeValue.split(/\s+/).length;
-        var hodors = ""
+        var gruns = ""
         for (var i = 0; i < num_words; i++)
-            hodors += generatePhrase();
-        element.nodeValue = hodors
+            gruns += generatePhrase();
+        element.nodeValue = gruns
     }
 }
 
 chrome.runtime.onMessage.addListener(
   function(request, sender, sendResponse) {
-    if(request.hodorify == true) {
+    if(request.grunify == true) {
       var html = document.getElementsByTagName('html')[0];
-      hodorify(html);
+      grunify(html);
     }
 });
 
